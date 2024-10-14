@@ -1,0 +1,53 @@
+form {
+    table {
+      width: 80%; // Ajuste la largeur selon tes besoins
+      margin: 20px auto; // Centre le tableau
+      border-collapse: collapse;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+  
+      td {
+        padding: 16px;
+        border: 1px solid #ddd; // Bordures des cellules
+        text-align: left; // Alignement du texte
+        color: #333;
+  
+        label {
+          font-weight: bold; // Met en gras les labels
+        }
+  
+        input {
+          width: 100%; // Prend toute la largeur de la cellule
+          padding: 8px; // Espacement interne
+          border: 1px solid #ccc;
+          border-radius: 4px;
+  
+          &:focus {
+            border-color: #4CAF50; // Change la couleur de la bordure au focus
+            outline: none; // Supprime le contour par défaut
+          }
+        }
+      }
+  
+      tr:hover {
+        background-color: #f1f1f1; // Change la couleur de fond au survol
+      }
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #1976D2;
+      }
+    }
+  }
+  

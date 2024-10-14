@@ -1,0 +1,17 @@
+<h2>Existing Events</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let event of events">
+    <td>{{ event.name }}</td>
+    <td>{{ event.startDate }}</td>
+    <td>{{ event.endDate }}</td>
+    <td>
+      <button (click)="viewDetails(event.id)">View Details</button>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,64 @@
+.login-container {
+    width: 300px; // Largeur du conteneur
+    margin: 50px auto; // Centré avec une marge en haut et en bas
+    display: flex;
+    flex-direction: column; // Colonne pour les éléments
+    gap: 15px; // Espacement entre les éléments
+    background-color: #fff; // Fond blanc
+    padding: 20px; // Espacement interne
+    border-radius: 10px; // Coins arrondis
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Ombre légère
+  
+    h2 {
+      text-align: center; // Centre le titre
+      color: #333; // Couleur du texte
+    }
+  
+    .form-group {
+      display: flex;
+      flex-direction: column; // Colonne pour les champs du formulaire
+      margin-bottom: 10px; // Espacement en bas
+  
+      label {
+        margin-bottom: 5px; // Espacement en bas du label
+        font-weight: bold; // Gras pour le label
+      }
+  
+      input {
+        padding: 8px; // Espacement interne
+        font-size: 16px; // Taille de police
+        border: 1px solid #ddd; // Bordure légère
+        border-radius: 5px; // Coins arrondis
+        width: 100%; // S'assure que les champs prennent toute la largeur
+  
+        &:focus {
+          border-color: #007bff; // Bordure bleue au focus
+          outline: none; // Supprime le contour par défaut
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); // Ombre au focus
+        }
+      }
+    }
+  
+    .error {
+      color: red; // Couleur des messages d'erreur
+      font-size: 14px; // Taille de police pour les messages d'erreur
+    }
+  
+    button {
+      padding: 10px; // Espacement interne
+      background-color: #007bff; // Couleur de fond
+      color: white; // Couleur du texte
+      border: none; // Supprime la bordure par défaut
+      border-radius: 5px; // Coins arrondis
+      cursor: pointer; // Curseur pointer pour le bouton
+  
+      &:hover {
+        background-color: #0056b3; // Couleur de fond au survol
+      }
+  
+      &:disabled {
+        background-color: #ccc; // Couleur de fond pour le bouton désactivé
+      }
+    }
+  }
+  

@@ -1,0 +1,40 @@
+.register-container {
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff; // Fond blanc
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+  
+      label {
+        margin-bottom: 5px;
+      }
+  
+      input, select {
+        padding: 8px;
+        font-size: 16px;
+      }
+    }
+  
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+  
+      &:disabled {
+        background-color: #ccc;
+      }
+    }
+  }
+  

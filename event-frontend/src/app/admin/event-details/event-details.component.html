@@ -1,0 +1,32 @@
+<h2>Event Details</h2>
+<table>
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td>{{ event?.name }}</td>
+  </tr>
+  <tr>
+    <td><strong>Description:</strong></td>
+    <td>{{ event?.description }}</td>
+  </tr>
+  <tr>
+    <td><strong>Location:</strong></td>
+    <td>{{ event?.location }}</td>
+  </tr>
+  <tr>
+    <td><strong>Start Date:</strong></td>
+    <td>{{ event?.startDate }}</td>
+  </tr>
+  <tr>
+    <td><strong>End Date:</strong></td>
+    <td>{{ event?.endDate }}</td>
+  </tr>
+  <tr>
+    <td><strong>Capacity:</strong></td>
+    <td>{{ event?.capacity }}</td>
+  </tr>
+</table>
+
+<div class="button-container">
+  <button (click)="editEvent()">Edit</button>
+  <button (click)="deleteEvent()">Delete</button>
+</div>
